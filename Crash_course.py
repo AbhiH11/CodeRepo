@@ -250,14 +250,56 @@ car = 'audi'
 # print("\nDo you really need a plain pizza")
 
 # names = ['admin','abhi_h','anu_h','sonu_k']
-names = []
-if names:
-    for name in names:
-        if name == 'admin':
-            print("Hello Admin, would you like to see a status report?")
-        else:
-            print(f"Hello {name.title()}, thank you for logging in again.!")
+# names = []
+# if names:
+#     for name in names:
+#         if name == 'admin':
+#             print("Hello Admin, would you like to see a status report?")
+#         else:
+#             print(f"Hello {name.title()}, thank you for logging in again.!")
+# else:
+#     # print(f"Hello {name}, thank you for logging in again.!")
+#     print("We need to find some users.!")
+# print('\nThank you have a Great day..!')
+
+# current_users = ['abhi_h','anu_h','SONU_K']
+# new_users = ['sonu_k','moni_k','abhi_h','anu_h']
+#
+# for new_user in new_users:
+#     if new_user.lower() in current_users:
+#         print('You need to create a new username'.title())
+#     else:
+#         print('username is available'.title())
+
+# num = [1,2,3,4,5,6,7,8,9]
+# for i in num:
+#     # print(i)
+#     if i == 1 :
+#         print(i,'st')
+#     elif i == 2:
+#         print(i,'nd')
+#     elif i == 3:
+#         print(i,'rd')
+#     else:
+#         print(i,'th')
+
+###----DICTIONARY----####
+
+# alien_0 = {'color':'green', 'points':5}
+# # print(alien_0['points'])
+# # print(alien_0['color'])
+# print(alien_0)
+alien_0={}
+alien_0['x_coordinate']= 0
+alien_0['y_coordinate'] = 30
+alien_0['speed']='medium'
+# print(f"The color of alien is {alien_0['color']}".title())
+print(f"original-position: {alien_0['x_coordinate']}".title())
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
 else:
-    # print(f"Hello {name}, thank you for logging in again.!")
-    print("We need to find some users.!")
-print('\nThank you have a Great day..!')
+    x_increment = 3
+alien_0['x_coordinate']= alien_0['x_coordinate']+ x_increment
+print(f"new x_position: {alien_0['x_coordinate']}".title())
