@@ -289,17 +289,34 @@ car = 'audi'
 # # print(alien_0['points'])
 # # print(alien_0['color'])
 # print(alien_0)
-alien_0={}
-alien_0['x_coordinate']= 0
-alien_0['y_coordinate'] = 30
-alien_0['speed']='medium'
-# print(f"The color of alien is {alien_0['color']}".title())
-print(f"original-position: {alien_0['x_coordinate']}".title())
-if alien_0['speed'] == 'slow':
-    x_increment = 1
-elif alien_0['speed'] == 'medium':
-    x_increment = 2
-else:
-    x_increment = 3
-alien_0['x_coordinate']= alien_0['x_coordinate']+ x_increment
-print(f"new x_position: {alien_0['x_coordinate']}".title())
+# alien_0={}
+# alien_0['x_coordinate']= 0
+# alien_0['y_coordinate'] = 30
+# alien_0['speed']='medium'
+# # print(f"The color of alien is {alien_0['color']}".title())
+# print(f"original-position: {alien_0['x_coordinate']}".title())
+# if alien_0['speed'] == 'slow':
+#     x_increment = 1
+# elif alien_0['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     x_increment = 3
+# alien_0['x_coordinate']= alien_0['x_coordinate']+ x_increment
+# print(f"new x_position: {alien_0['x_coordinate']}".title())
+
+# name = "s3://amazon.com"
+# def get_name(name:str):
+#     not_name = False
+#     not_namee = False
+#     name1 = 's3://aws.com'.lower()
+#     if name[:len(name1)].lower()!= name1:
+#         not_name = True
+#     name2 = 'hariii'.lower()
+#     if name[:len(name2)].lower()!= name2:
+#         not_namee = True
+#     if not_name and not_namee:
+#         name = 'H'+ name
+#     # if (not_namee == False):
+#     #     name = "a"+ name
+#         return name
+# print(get_name("satya"))
