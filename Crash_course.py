@@ -410,3 +410,142 @@ car = 'audi'
 #     else:
 #         print(f'{i.title()} Sorry, You need to take the poll')
 
+####----NESTED-DICT----####
+
+# friends = {'color':'Green','speed':'Slow','points':5}
+# friends2 = {'color':'Yellow','speed':'Slow','points':15}
+# friends3 = [friends,friends2]
+# print(friends3)
+
+# dict = []
+#
+# for dict_num in range(5):
+#     new_dict = {'name':'abhi','age':30}
+#     dict.append(new_dict)
+#     # print(dict)
+# for i in dict[:3]:
+#     print(dict)
+# print('.....')
+# #
+# # print(f'\nTotal number of aliens added {len(dict)}')
+#
+# for i in dict[:2]:
+#     if i['name'] == 'abhi':
+#         i['name'] = 'Abhinay'
+#         i['age'] = 29
+#         print(dict)
+
+# pizza = {
+#     'crust':'thick',
+#     'toppings':['mushrooms','pepparoni']
+# }
+# print(f"You have ordered a {pizza['crust']}-crust pizza With the toppings:")
+# # print('')
+# for topping in pizza['toppings']:
+#     print('\t'+ topping)
+
+# favorite_languages = {
+#     'jen': ['python', 'ruby'],
+#     'sarah': ['c'],
+#     'edward': ['ruby', 'go'],
+#     'phil': ['python', 'haskell'],
+# }
+# for name,languages in favorite_languages.items():
+#     print(f"\n{name.title()}'s favourite languages are: ")
+#     for language in languages:
+#         print(f'\t{language.title()}')
+
+# favorite_languages = {
+#     'Abhi': ['python'],
+#     'Anu': ['c','Java'],
+#     'edward': ['ruby'],
+#     'phil': ['python', 'haskell'],
+# }
+#
+# for name,languages in favorite_languages.items():
+#     if len(languages)<=1:
+#         print(f"{name.title()}'s fav language is: ")
+#     else:
+#         print(f"{name.title()}'s fav languages are: ")
+#     for language in languages:
+#         print(f"\t{language.title()}")
+
+# users = {
+#     'abhi':{
+#         'fname':'Hari',
+#         'lname':'Abhi',
+#         'age':30
+#     },
+#     'anu':{
+#         'fname':'Hari',
+#         'lname':'Anu',
+#         'age':28
+#     },
+#     'satya':{
+#         'fname':'Hari',
+#         'lname':'Satya',
+#         'age':27
+#     }
+# }
+# # for username,user_info in users.items():
+# #     print(f"\nusername:{username}")
+# #     full_name = f"{user_info['fname']} {user_info['lname']}"
+# #     age = f"{user_info['age']}"
+# #
+# #     print(f"\tfull_name = {full_name.title()}")
+# #     print(f"\tAge= {age.title()}")
+#
+# for name,info in users.items():
+#     print(f"username = {name}")
+#     full_name = f"{info['fname']}-{info['lname']}"
+#     age = f"{info['age']}"
+#
+#     print(f"\tFullname = {full_name}")
+#     print(f"\tAge = {age}")
+
+# user1 = {
+#     'name':'abhi',
+#     'age':30
+# }
+# user2 = {
+#     'name':'anu',
+#     'age':28
+# }
+#
+# people = [user1,user2]
+# print(people)
+# for i in people:
+#     print(f"{i['name']} {i['age']}")
+
+# pet = {
+#     'name':'DOG',
+#     'nature':'faithful',
+#     'owner': 'abhi'
+# }
+# owner = {
+#     'name':'cat',
+#     'nature':'cunning',
+#     'owner':'anu'
+# }
+# pets = [pet,owner]
+# # print(pets)
+#
+# for i in pets:
+#     print(f"A {i['name'].title()} is a {i['nature']} and its owner is {i['owner'].title()}")
+
+####----INPUT AND WHILE_LOOP----####
+
+# rental_car = input("What kind of rental car you would like?\n")
+# print(f"let me find you a {rental_car}")
+# question = input("How many people are in your dinner group?\n ")
+# question = int(question)
+# if question >8:
+#     print("I am sorry you need to wait for the table to get ready..!")
+# else:
+#     print("Your table is ready.!")
+
+# ten = int(input("Enter a number: \n"))
+# if ten % 10 ==0:
+#     print(f"{ten} is the multiple of 10.!")
+# else:
+#     print(f"{ten} is not the multiple of 10.!")
