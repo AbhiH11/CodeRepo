@@ -320,3 +320,93 @@ car = 'audi'
 #     #     name = "a"+ name
 #         return name
 # print(get_name("satya"))
+
+# DICTIONARY GET
+
+# name = {'abhi':'hari','anu':'hari'}
+# # print(name['satya'])
+# print_value = name.get('satya','No key_value for the key = satya')
+# print(print_value)
+# details = {
+#     'name':'abhi',
+#     'lname':'hari',
+#     'age':30,
+#     'address':'Hyderabad'
+# }
+# print(details)
+# print(details['name'])
+# print(details['lname'])
+# print(details['age'])
+# print(details['address'])
+
+# for i in details:
+#     print(i,':',details[i])
+# for i,j in details.items():
+#     print(i,':',j)
+
+# user = {
+#     'username': 'abhi',
+#     'first':"a",
+#     'last':'H'
+# }
+# for key,value in user.items():
+#     print(f'\nkey:{key}')
+#     print(f'value:{value}')
+
+# fav_languages = {
+#     'abhi':'python',
+#     'anu':'java',
+#     'satya':'javascript'
+# }
+# for name,language in fav_languages.items():
+#     print(f"{name.title()}'s fav language is {language}.")
+# friends = ['abhi','anu']
+# for name in fav_languages.keys():
+#     print(f'Hi {name.title()}')
+#
+#     if name in friends:
+#         language = fav_languages[name].title()
+#         print(f'\t{name.title()},I see you love {language}')
+# if 'moni' not in fav_languages.keys():
+#     print('Moni please take a poll')
+
+# for name in sorted(fav_languages.keys()):
+#     print(f'{name.title()}. Thank you for taking the poll')
+
+# details = {
+#     'name':'abhi',
+#     'lname':'hari',
+#     'age':30,
+#     'address':'Hyderabad'
+# }
+#
+# for key,value in details.items():
+#     print(f'{key}:{value}')
+
+# dict = {
+#     'delhi':'hyd',
+#     'hyd':'telangana',
+#     'raksha':'hyd'
+# }
+
+# for key,value in dict.items():
+#     print(f'{key.title()} is the capital of {value.title()}')
+# for key in dict.keys():
+#     print(f'{key.title()}')
+#
+# for value in dict.values():
+#     print(f'{value.title()}')
+
+# fav_languages = {
+#     'abhi':'python',
+#     'anu':'java',
+#     'satya':'javascript'
+# }
+# friends = ['satya','moni','abhi','anu','sonu']
+#
+# for i in friends:
+#     if i in fav_languages.keys():
+#         print(f'{i.title()}. Thanks for taking the poll')
+#     else:
+#         print(f'{i.title()} Sorry, You need to take the poll')
+
