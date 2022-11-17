@@ -549,3 +549,116 @@ car = 'audi'
 #     print(f"{ten} is the multiple of 10.!")
 # else:
 #     print(f"{ten} is not the multiple of 10.!")
+
+# prompt = "Tell me something to do i will repeat it for you:"
+# prompt+= "\nEnter 'quit to end the program"
+#
+# message = ''
+# while message!= 'quit':
+#     message = input(prompt)
+#     if message!='quit':
+#         print(message)
+
+# message = int(input("Enter a number: \n"))
+# curr_num = 1
+#
+# while curr_num<=6:
+#     print(curr_num)
+#     curr_num+=1
+# prompt = "Tell me what to do i will do it for u"
+# prompt ="Enter 'quit to end the program"
+# active = True
+# # message = ''
+# while active:
+#     message = input(prompt)
+#
+#     if message == 'quit':
+#         active = False
+#     else:
+#         print(message)
+
+# curr_num = int(input("enter a number: \n"))
+
+# while curr_num<=6:
+#     print(curr_num)
+#     curr_num+=1
+# while curr_num < 10:
+#     curr_num+=1
+#     if curr_num  == 3:
+#         continue
+#     else:
+#         print(curr_num)
+
+# 1.ask user to enter a series of pizza topping till they enter 'quit'
+# 2.print a message saying we are adding the topping to their pizza
+
+# prompt = "Please enter your topping:"
+# prompt += "\nEnter 'quit' to end the program"
+
+
+# while message!='quit':
+#     message = input(prompt)
+#     if message!='quit':
+#         print(f"We are adding {message} to your pizza..!")
+# active = True
+# message = ""
+# while active:
+#     message = input(prompt)
+#     if message == 'quit':
+#         active = False
+#     else:
+#         print(f"We are adding {message} to your pizza..!!")
+
+# 1.age <3 fare is free
+# 2. age >=3 and age <12 fare is 10$
+# 3.age > 12 fare is 15$
+# 4.ask theirs age and print the fare
+
+# age = int(input("Please enter your age: "))
+# while True:
+#     if age < 3:
+#         print("Your fare for the ticket is free")
+#         break
+#     elif age >=3 and age <12:
+#         print("Your fare for the ticket is 10$")
+#         break
+#     else:
+#         print("Your fare for the ticket is 15$")
+#         break
+
+####----WHILE_LOOP WITH LISTS AND DICTIONARIES----####
+
+# unconfirmed_users = ['abhi','anu','sonu','moni']
+# confirmed_users = []
+#
+# while unconfirmed_users:
+#     current_user = unconfirmed_users.pop()
+#
+#     print(f"Verifying user: {current_user.title()}")
+#     confirmed_users.append(current_user)
+# print("\nThe following users have been confirmed:")
+# for confirmed_user in confirmed_users:
+#     print(confirmed_user.title())
+
+# pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+# print(pets)
+#
+# while 'cat' in pets:
+#     pets.remove('cat')
+# print(pets)
+
+# responses = {}
+# polling_active = True
+# while polling_active:
+#     name = input("\nwhat is your name?")
+#     response = input(("\nWhich mountain would you like to climb someday?"))
+#
+#     responses[name] = response
+#
+#     repeat = input(("Would you like to ley other people respond? (y or n)"))
+#
+#     if repeat == 'n':
+#         polling_active = False
+# print("\n---Polling results----")
+# for name,response in responses.items():
+#     print(f"{name} would like to climb {response} someday")
