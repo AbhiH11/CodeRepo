@@ -662,3 +662,55 @@ car = 'audi'
 # print("\n---Polling results----")
 # for name,response in responses.items():
 #     print(f"{name} would like to climb {response} someday")
+
+# 1.Empty dict
+# 2.append the empty dict
+# 3.Ask where they like other people to take the poll
+# 4.Print the polling results
+
+# poll = {}
+# polling_active = True
+# while polling_active:
+#     name = input("What is your name?\n")
+#     response = input("Which mountain would you like to climb one day?\n")
+#
+#     poll[name] = response
+#
+#     repeat = input("would you like to let other people take the poll? (y or n)")
+#     if repeat == 'n':
+#         polling_active = False
+# print("----polling results----")
+#
+# for name,response in poll.items():
+#     print(f"{name} would like to climb {response} one day..!")
+
+# sandwich_orders = ['pastrami','fish','tuna','pastrami','veg','pastrami']
+# finished_sandwiches = []
+# print("Deli has run out of 'pastrami'")
+# while 'pastrami' in sandwich_orders:
+#     sandwich_orders.remove('pastrami')
+#     print(sandwich_orders)
+# for sandwich_order in sandwich_orders:
+#     print(f"I made your {sandwich_order} sandwich")
+#     finished_sandwiches.append(sandwich_order)
+# print("--SANDWICHES MADE--")
+# for finished_sandwich in finished_sandwiches:
+#     print(f"{finished_sandwich}")
+# print(finished_sandwiches)
+
+# people = {}
+#
+# polling_active = True
+#
+# while polling_active:
+#     name = input("Please enter your name: \n")
+#     question = input("If you could visit one place in the world, where would you go?\n")
+#
+#     people[name] = question
+#
+#     repeat = input("Would you let others take the poll? (y or n)")
+#     if repeat == 'n':
+#         polling_active = False
+# print("----POLL RESULTS----")
+# for name,question in people.items():
+#     print(f"{name} would like to visit {question} in the world..!")
