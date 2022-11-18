@@ -804,19 +804,41 @@ car = 'audi'
 # print(info2)
 
 # def make_album(artist_name,album_title):
-#     details = {'name':artist_name,'title':album_title}
-#     # details1 = {'name1':artist_name,'title1':album_title}
+#     details ={'name':artist_name,'title':album_title}
+    # return details
+
+# dict = make_album(123,45)
+# dict2 = make_album(456,789)
+# dict3 = make_album(4567,7892)
+#
+# print(dict)
+# print(dict2)
+# print(dict3)
+
+# def make_album(artist_name,album_title,no_of_songs=None):
+#     details ={'name':artist_name,'title':album_title}
+#
+#     """With none to add extra parameter in the dict"""
+#     if no_of_songs:
+#         details['no_of_songs'] = no_of_songs
+#         return details
+#
+# dict = make_album(123,456,8)
+# print(dict)
+
+# def make_album(artist_name,album_title):
+#     details ={'name':artist_name,'title':album_title}
 #     return details
 # while True:
-#     print("\nEnter your details: ")
-#     name = input("Enter artist name: ")
-#     title = input("Enter album title: ")
-#     name1 = input("Enter artist name: ")
-#     title1 = input("Enter album title: ")
-#     dict = make_album(name,title)
-#     dict2 = make_album(name1,title1)
-#     # dict1 = make_album(name,title)
-#     # dict2 = make_album(name,title)
+#     print("\nEnter artist details: ")
+#     print("Enter 'q' anytime to quit")
+#     name = input("Enter Artist's name: ")
+#     # title = input("Enter Album's title: ")
 #
-#     print(dict)
-#     print(dict2)
+#     if name =='q':
+#         break
+#     title = input("Enter Album's title: ")
+#     if title == 'q':
+#         break
+#     dict = make_album(name,title)
+#     print(f"The {name} has the {title} album".title())
