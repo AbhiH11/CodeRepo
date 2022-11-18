@@ -842,3 +842,21 @@ car = 'audi'
 #         break
 #     dict = make_album(name,title)
 #     print(f"The {name} has the {title} album".title())
+"""Practice 'quit' """
+
+# def make_list(name,title):
+#     person = {'artist_name':name,'album_title':title}
+#     return person
+#
+# while True:
+#     print("\nEnter INFO")
+#     print("Enter 'q' anytime to quit")
+#     artist_name = input("Enter Name: ")
+#     if artist_name == 'q':
+#         break
+#     album_title = input("Enter title: ")
+#     if album_title == 'q':
+#         break
+#     details = make_list(artist_name,album_title)
+#     print(f"{artist_name} has {album_title} title records".title())
+
