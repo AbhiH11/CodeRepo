@@ -714,3 +714,109 @@ car = 'audi'
 # print("----POLL RESULTS----")
 # for name,question in people.items():
 #     print(f"{name} would like to visit {question} in the world..!")
+
+####----FUNCTIONS----####
+
+# def greet_user():
+#     """Display a simple greeting message """
+#     print("Hello")
+# greet_user()
+#
+# """passing username to a function"""
+#
+# def greet_user(username):
+#     print(f"Hello {username}")
+# greet_user('Abhi')
+
+# def display_message():
+#     print("I am learning 'Functions' in this chapter")
+# display_message()
+
+# def fav_book(title):
+#     print(f"My fav book is {title}".title())
+# fav_book("Alice the wonderland")
+
+# def describe_pet(animal_type,petname):
+#     """Describe the pet info"""
+#     print(f"\nI have a {animal_type}".title())
+#     print(f"My {animal_type}'s name is {petname}")
+# describe_pet('dog','Browney')
+# describe_pet('cat','smiley')
+
+# def make_shirt(message,size = 'L'):
+#     print(f"The Size of the T_shirt is {size} with the message {message}")
+# make_shirt('I LOVE PYTHON')
+# """With key word arguments"""
+# make_shirt(size='L',message='PYTHON DEVELOPER')
+
+# def make_shirt(size,message = 'PYTHON IS LOVE..'):
+#     print(f"The Size of the T_shirt is {size} with the message:{message}")
+# make_shirt('M')
+
+# def describe_city(city,country = 'India'):
+#     print(f"{city} is in {country}")
+# describe_city('Hyderabad')
+# describe_city('Lxpt')
+# describe_city('Knr')
+
+# def get_foratted_one(fname,lname,mname):
+#     """Return a full name, neatly formatted"""
+#     full_name = f"{fname} {mname} {lname}"
+#     return full_name.title()
+#
+# musician = get_foratted_one('Hari','','Abhi')
+# print(musician)
+
+# def get_foratted_one(fname,lname,mname= ''):
+#     """Return a full name, neatly formatted"""
+#     if mname:
+#         full_name = f"{fname} {mname} {lname}".title()
+#     else:
+#         full_name = f'{fname} {lname}'.title()
+#     return full_name.title()
+#
+# musician = get_foratted_one('Hari','Mr','Abhi')
+# print(musician)
+
+# def build_person(fname,lname,age = None):
+#     person = {'first':fname,'last':lname}
+#     if age:
+#         person['age'] = age
+#     return person
+#
+# details = build_person('Hari','Abhi', age=30)
+# print(details)
+
+# def get_foratted_one(fname,lname):
+#     """Return a full name, neatly formatted"""
+#     full_name = f"{fname} {lname}"
+#     return full_name.title()
+
+# def city_country(city,country):
+#     details = f"{city},{country}".title()
+#     return details
+# # city_country('hyderabad','India')
+# info = city_country('gdk','india')
+# info1 = city_country('Hyd','india')
+# info2 = city_country('knr','india')
+# print(info)
+# print(info1)
+# print(info2)
+
+# def make_album(artist_name,album_title):
+#     details = {'name':artist_name,'title':album_title}
+#     # details1 = {'name1':artist_name,'title1':album_title}
+#     return details
+# while True:
+#     print("\nEnter your details: ")
+#     name = input("Enter artist name: ")
+#     title = input("Enter album title: ")
+#     name1 = input("Enter artist name: ")
+#     title1 = input("Enter album title: ")
+#     dict = make_album(name,title)
+#     dict2 = make_album(name1,title1)
+#     # dict1 = make_album(name,title)
+#     # dict2 = make_album(name,title)
+#
+#     print(dict)
+#     print(dict2)
