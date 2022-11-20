@@ -792,6 +792,9 @@ car = 'audi'
 #     full_name = f"{fname} {lname}"
 #     return full_name.title()
 
+
+                # """TRY IT YOURSELF"""
+
 # def city_country(city,country):
 #     details = f"{city},{country}".title()
 #     return details
