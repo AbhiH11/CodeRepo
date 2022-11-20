@@ -663,6 +663,8 @@ car = 'audi'
 # for name,response in responses.items():
 #     print(f"{name} would like to climb {response} someday")
 
+# """TRI IT YOURSELF"""
+
 # 1.Empty dict
 # 2.append the empty dict
 # 3.Ask where they like other people to take the poll
