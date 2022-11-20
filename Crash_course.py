@@ -893,10 +893,10 @@ car = 'audi'
 
 """printing models using 'functions' """
 
-# def printing_model(unprinted_models,completed_models):
+# def printing_model(unprinted_design,completed_models):
 #
-#     while unprinted_models:
-#         current_model = unprinted_models.pop()
+#     while unprinted_design:
+#         current_model = unprinted_design.pop()
 #         print(f"Printing models: {current_model}")
 #         completed_models.append(current_model)
 #
@@ -906,7 +906,11 @@ car = 'audi'
 #         print(completed_model)
 #
 # unprinted_models = ['rubber','pencil','pen']
+# unprinted_design = unprinted_models[:]
 # completed_models = []
 #
 # printing_model(unprinted_models,completed_models)
 # show_completed_models(completed_models)
+
+# print(unprinted_design)
+
