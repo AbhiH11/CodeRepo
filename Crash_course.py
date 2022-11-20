@@ -865,3 +865,48 @@ car = 'audi'
 #     details = make_list(artist_name,album_title)
 #     print(f"{artist_name} has {album_title} title records".title())
 
+                # """PRACTICE"""
+
+# def greeting(names):
+#     """Print a greeting to each user in the list"""
+#     for name in names:
+#         print(f"Hello {name}".title())
+# usernames = ['Abhi','Anu','Hari']
+# greeting(usernames)
+
+# unprinted_designs = ['phone case','robot','pencil']
+# completed_designs = []
+#
+# # Simulate printing each design, until none are left.
+# # Move each design to completed_models after printing.
+#
+# while unprinted_designs:
+#     current_design = unprinted_designs.pop()
+#
+#     print(f"printing models: {current_design}")
+#     completed_designs.append(current_design)
+#
+# # Display all completed models.
+# print("\nThe following models have been printed:")
+# for completed_design in completed_designs:
+#     print(completed_design)
+
+"""printing models using 'functions' """
+
+# def printing_model(unprinted_models,completed_models):
+#
+#     while unprinted_models:
+#         current_model = unprinted_models.pop()
+#         print(f"Printing models: {current_model}")
+#         completed_models.append(current_model)
+#
+# def show_completed_models(completed_models):
+#     print("\nThe following models have been printed: ")
+#     for completed_model in completed_models:
+#         print(completed_model)
+#
+# unprinted_models = ['rubber','pencil','pen']
+# completed_models = []
+#
+# printing_model(unprinted_models,completed_models)
+# show_completed_models(completed_models)
