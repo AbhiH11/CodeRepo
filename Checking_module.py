@@ -20,3 +20,26 @@
 #
 # printing_model(unfinished,finished)
 # show_completed_models(finished)
+
+# from Crash_course import car_details
+# info = car_details(800,'mini',maker = 'maruti')
+# print(info)
+
+# import Crash_course
+# det = Crash_course.car_details('Terrano','SUV',maker = 'Nissan',wheelbase = 'Large')
+# print(det)
+
+
+# from Crash_course import car_details as c
+#
+# inf = c(800,'mini',maker = 'maruti')
+# print(inf)
+
+# import Crash_course as cr
+#
+# dete = cr.car_details(800,'mini',maker = 'maruti',whelbase = 'small')
+# print(dete)
+
+# from Crash_course import *
+# fun = car_details(800,'mini',maker = 'maruti')
+# print(fun)
