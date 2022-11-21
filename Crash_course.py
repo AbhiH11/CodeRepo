@@ -914,3 +914,104 @@ car = 'audi'
 
 # print(unprinted_design)
 
+#               TRY IT YOURSELF
+
+# def show_messages(names):
+#     for name in names:
+#         print(f"Hello {name}".title())
+#
+# list = ['Abhi', 'anu', 'satya']
+# show_messages(list)
+
+# def show_messages(names,sent_messages):
+#     print("\nThe following names have been moved: ")
+#     while names:
+#         sending_messages = names.pop()
+#         print(f"Hello {sending_messages}")
+#         sent_messages.append(sending_messages)
+#
+# def send_messages(sent_messages):
+#     print("\nThe moved messages are: ")
+#     for send_message in sent_messages:
+#         print(send_message)
+# list = ['Abhi', 'anu', 'satya']
+# sent_messages = []
+# show_messages(list,sent_messages)
+# send_messages(sent_messages)
+# print(sent_messages)
+# print(list)
+
+
+# def show_messages(list_copied,sent_messages):
+#     print("\nThe following messages have been moved: ")
+#     while list_copied:
+#         sending_messages = list_copied.pop()
+#         print(f"{sending_messages}")
+#         sent_messages.append(sending_messages)
+#
+# def send_messages(sent_messages):
+#     print("\nThe moved messages are: ")
+#     for send_message in sent_messages:
+#         print(send_message)
+# list = ['Hello Abhi', 'Hello anu', 'Hello satya']
+# list_copied = list[:]
+# sent_messages = []
+#
+# show_messages(list_copied,sent_messages)
+# send_messages(sent_messages)
+#
+# print(sent_messages)
+# print(list)
+
+
+# def pizza(*toppings):
+#     print(toppings)
+# # toppings = ['a','b','c']
+# pizza('a')
+# pizza('a','b','c','d')
+
+# def pizza(*toppings):
+#     print("\nMaking a pizza with the following toppings")
+#     for topping in toppings:
+#         print(f"-{topping}")
+# pizza('mushroom','pepparoni','cheese')
+
+# def making_pizza(size,*toppings):
+#     print(f"\nMaking a {size} inch pizza with the following toppings:")
+#     for topping in toppings:
+#         print(f"-{topping}")
+# making_pizza(10,'mushroom')
+# making_pizza(12,'pepparoni','extra cheese')
+
+# def make_profile(fname,lname,**user_info):
+#     user_info['first_name'] = fname
+#     user_info['last_name'] = lname
+#     return user_info
+# profile = make_profile('hari','abhi',location = 'Hyderabd',field = 'Computers')
+# # make_profile('hari','abhi',location = 'Hyderabd',field = 'Computers')
+# print(profile)
+
+# def make_sandwich(*items):
+#     print("\nMaking sandwich with the list of items: ")
+#     for item in items:
+#         print(f"-{item}")
+# make_sandwich('cheese')
+# make_sandwich('hot','olive','tomato')
+# make_sandwich('empty')
+
+# def make_profile(fname,lname,**details):
+#     details['firstname'] = fname
+#     details['lastname'] = lname
+#     return details
+# person = make_profile('hari','abhi',location = 'hyderabad',field = 'ECE',uniersity = 'JNTU')
+# print(person)
+
+def car_details(car,type,**info):
+    # print('\nDetails are: ')
+    info['Name'] = car
+    info['Type'] = type
+    return info
+# details = car_details('Terrano','SUV',maker = 'Nissan')
+# details2 = car_details('Maruti 800','mini',maker = 'Maruti',wheelbase = 'small')
+# print(details)
+# print(details2)
