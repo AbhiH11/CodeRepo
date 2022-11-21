@@ -1116,6 +1116,6 @@ car = 'audi'
 #
 # my_car = Car('Maruti','Maruti 800', 2014)
 # print(my_car.describe_car())
-# # my_car.mileage = 50
+# my_car.mileage = 50
 # my_car.update_mileage(62)
 # my_car.car_mileage()
