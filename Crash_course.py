@@ -1,5 +1,5 @@
 # v = "morning"
-v = "good morning"
+# v = "good morning"
 # v3 = v
 # print(v3)
 # print(v.title())
@@ -157,7 +157,7 @@ v = "good morning"
 # for food in foods:
 #     print(food.title())
 
-cars = ['audi','benz','tata','toyota']
+# cars = ['audi','benz','tata','toyota']
 # if 'audi' in cars:
 #     print('yes its in the cars list')
 #
@@ -169,7 +169,7 @@ cars = ['audi','benz','tata','toyota']
 #     else:
 #         print(car.title())
 
-car = 'audi'
+# car = 'audi'
 
 # if car != 'zoom':
 #     print('Try again')
@@ -410,6 +410,7 @@ car = 'audi'
 #     else:
 #         print(f'{i.title()} Sorry, You need to take the poll')
 
+
 ####----NESTED-DICT----####
 
 # friends = {'color':'Green','speed':'Slow','points':5}
@@ -426,9 +427,8 @@ car = 'audi'
 # for i in dict[:3]:
 #     print(dict)
 # print('.....')
-# #
-# # print(f'\nTotal number of aliens added {len(dict)}')
-#
+# print(f'\nTotal number of aliens added {len(dict)}')
+
 # for i in dict[:2]:
 #     if i['name'] == 'abhi':
 #         i['name'] = 'Abhinay'
@@ -440,7 +440,7 @@ car = 'audi'
 #     'toppings':['mushrooms','pepparoni']
 # }
 # print(f"You have ordered a {pizza['crust']}-crust pizza With the toppings:")
-# # print('')
+# print('')
 # for topping in pizza['toppings']:
 #     print('\t'+ topping)
 
@@ -487,13 +487,13 @@ car = 'audi'
 #         'age':27
 #     }
 # }
-# # for username,user_info in users.items():
-# #     print(f"\nusername:{username}")
-# #     full_name = f"{user_info['fname']} {user_info['lname']}"
-# #     age = f"{user_info['age']}"
-# #
-# #     print(f"\tfull_name = {full_name.title()}")
-# #     print(f"\tAge= {age.title()}")
+# for username,user_info in users.items():
+#     print(f"\nusername:{username}")
+#     full_name = f"{user_info['fname']} {user_info['lname']}"
+#     age = f"{user_info['age']}"
+#
+#     print(f"\tfull_name = {full_name.title()}")
+#     print(f"\tAge= {age.title()}")
 #
 # for name,info in users.items():
 #     print(f"username = {name}")
@@ -528,7 +528,7 @@ car = 'audi'
 #     'owner':'anu'
 # }
 # pets = [pet,owner]
-# # print(pets)
+# print(pets)
 #
 # for i in pets:
 #     print(f"A {i['name'].title()} is a {i['nature']} and its owner is {i['owner'].title()}")
@@ -568,7 +568,7 @@ car = 'audi'
 # prompt = "Tell me what to do i will do it for u"
 # prompt ="Enter 'quit to end the program"
 # active = True
-# # message = ''
+# message = ''
 # while active:
 #     message = input(prompt)
 #
@@ -630,7 +630,7 @@ car = 'audi'
 
 # unconfirmed_users = ['abhi','anu','sonu','moni']
 # confirmed_users = []
-#
+
 # while unconfirmed_users:
 #     current_user = unconfirmed_users.pop()
 #
@@ -1092,6 +1092,7 @@ car = 'audi'
 # anu = user('Hari','Anurag',28, 'India')
 # anu.describe_user()
 # anu.greet_user()
+
 
 # class Car:
 #
