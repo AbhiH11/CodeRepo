@@ -1006,12 +1006,116 @@ car = 'audi'
 # person = make_profile('hari','abhi',location = 'hyderabad',field = 'ECE',uniersity = 'JNTU')
 # print(person)
 
-def car_details(car,type,**info):
-    # print('\nDetails are: ')
-    info['Name'] = car
-    info['Type'] = type
-    return info
+# def car_details(car,type,**info):
+#     # print('\nDetails are: ')
+#     info['Name'] = car
+#     info['Type'] = type
+#     return info
 # details = car_details('Terrano','SUV',maker = 'Nissan')
 # details2 = car_details('Maruti 800','mini',maker = 'Maruti',wheelbase = 'small')
 # print(details)
 # print(details2)
+
+#                                   ----CLASSES----
+
+# class dog:
+#     """A simple attempt to model a dog"""
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#
+#     def sit(self):
+#         """simulate a dog sitting in response to a command"""
+#         print(f"{self.name} is now sitting")
+#
+#     def roll_over(self):
+#         """simulate rolling over in response to a command"""
+#         print(f"{self.name} is rolled over")
+#
+# my_dog = dog('browney',6)
+# print(f"My dog name is {my_dog.name}")
+# print(f'My dog age is {my_dog.age}')
+# my_dog.sit()
+# my_dog.roll_over()
+#
+# your_dog = dog('Snoopy',5)
+# print(f"\nMy dog name is {your_dog.name}")
+# your_dog.sit()
+# your_dog.roll_over()
+
+# class restaurent:
+#     def __init__(self,name,cusine):
+#         self.name = name
+#         self.cusine =cusine
+#
+#     def describe_restaurent(self):
+#         print(f"\nName of the restaurent is {self.name}")
+#         print(f"Cusine type of the restaurent is {self.cusine}")
+#
+#     def open_restaurent(self):
+#         print(f"{self.name} is now Open..!")
+#
+# Restaurent = restaurent('My_restaurent','Indian')
+# print(f"{Restaurent.name} is a good choice..! Because it has {Restaurent.cusine} cusine. ")
+# Restaurent.describe_restaurent()
+# Restaurent.open_restaurent()
+
+# abhi = restaurent('AH','Italian')
+# anu = restaurent('AN','Indian')
+# satya = restaurent('VS','Home-Made')
+#
+# abhi.describe_restaurent()
+# anu.describe_restaurent()
+# satya.describe_restaurent()
+
+# class user:
+#
+#     def __init__(self,fname,lname,age,location):
+#         self.fname = fname
+#         self.lname = lname
+#         self.age = age
+#         self.location = location
+#
+#     def describe_user(self):
+#         print(f"\nHi my name is {self.fname} {self.lname}")
+#         print(f"I am {self.age} years old")
+#         print(f'I stay in {self.location}')
+#
+#     def greet_user(self):
+#         print(f"\nHello {self.fname} {self.lname}. Welcome..!!")
+#
+# abhi = user('Hari','Abhinay',30,'Ind')
+#
+# abhi.describe_user()
+# abhi.greet_user()
+#
+# anu = user('Hari','Anurag',28, 'India')
+# anu.describe_user()
+# anu.greet_user()
+
+# class Car:
+#
+#     def __init__(self,name,model,year):
+#         self.name = name
+#         self.model = model
+#         self.year = year
+#         self.mileage = 60
+#
+#     def describe_car(self):
+#         long_name = f'{self.year} {self.model} {self.name}'
+#         return long_name
+#
+#     def car_mileage(self):
+#         print(f"This car has {self.mileage} miles on it.")
+#
+#     def update_mileage(self,mileage):
+#         if mileage >= self.mileage:
+#             self.mileage = mileage
+#         else:
+#             print("You cant roll back the Mileage..!")
+#
+# my_car = Car('Maruti','Maruti 800', 2014)
+# print(my_car.describe_car())
+# # my_car.mileage = 50
+# my_car.update_mileage(62)
+# my_car.car_mileage()
