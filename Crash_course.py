@@ -1115,8 +1115,76 @@
 #         else:
 #             print("You cant roll back the Mileage..!")
 #
+#     def increment_odometer(self,miles):
+#         self.mileage+=miles
+#
 # my_car = Car('Maruti','Maruti 800', 2014)
 # print(my_car.describe_car())
-# my_car.mileage = 50
-# my_car.update_mileage(62)
+# # my_car.mileage = 50
+# my_car.update_mileage(59)
 # my_car.car_mileage()
+# my_car.increment_odometer(1000)
+# my_car.car_mileage()
+
+# class restaurent:
+#     def __init__(self,name,cusine):
+#         self.name = name
+#         self.cusine =cusine
+#         self.number_served = 25
+#
+#     def describe_restaurent(self):
+#         print(f"\nName of the restaurent is {self.name}")
+#         print(f"Cusine type of the restaurent is {self.cusine}")
+#
+#     def open_restaurent(self):
+#         print(f"{self.name} is now Open..!")
+#
+#     def set_number_served(self):
+#         print(f"The number of customers served are: {self.number_served}")
+#
+#     def increment_num_served(self,Add):
+#         self.number_served+=Add
+#
+#
+# Restaurant = restaurent("Abhi","Indian")
+# Restaurant.set_number_served()
+# Restaurant.increment_num_served(5)
+# Restaurant.set_number_served()
+
+# class user:
+#
+#     def __init__(self,fname,lname):
+#         self.fname = fname
+#         self.lname = lname
+#         # self.age = age
+#         # self.location = location
+#         self.login_attempts = 0
+#
+#     def describe_user(self):
+#         print(f"\nHi my name is {self.fname} {self.lname}")
+#         # print(f"I am {self.age} years old")
+#         # print(f'I stay in {self.location}')
+#
+#     def greet_user(self):
+#         print(f"\nHello {self.fname} {self.lname}. Welcome..!!")
+#
+#     def Login_attempts(self):
+#         print(f"The login attempts are: {self.login_attempts}")
+#
+#     def increment_login_attempts(self):
+#         self.login_attempts+=1
+#
+#     def reset_login_attempts(self):
+#         if self.login_attempts !=0:
+#             self.login_attempts =0
+#         else:
+#             self.login_attempts = self.login_attempts
+#
+# people = user('Hari','Abhi')
+# # people.describe_user()
+# # people.greet_user()
+# people.Login_attempts()
+# people.increment_login_attempts()
+# people.Login_attempts()
+# people.reset_login_attempts()
+# people.Login_attempts()
