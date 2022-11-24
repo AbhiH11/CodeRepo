@@ -1201,3 +1201,42 @@
 # people.increment_login_attempts()
 # people.Login_attempts()
 
+class Car:
+    def __init__(self,name,model,year):
+        self.name = name
+        self.model = model
+        self.year = year
+        self.mileage = 60
+        self.fuel = 50
+
+    def describe_car(self):
+        long_name = f'{self.year} {self.model} {self.name}'
+        return long_name
+
+    def fuel_tank(self):
+        print(f"This car has {self.fuel}-litre capacity")
+
+class Battery:
+    def __init__(self,battery_size = 80):
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        print(f"This car has {self.battery_size}-KHW battery")
+
+class electronic_car(Car):
+
+    def __init__(self,name,model,year):
+        super().__init__(name,model,year)
+        self.battery = Battery()
+
+    # def battery_size(self):
+    #     print(f"This car has {self.battery} khw battery")
+
+    def fuel_tank(self):
+        print("This car doesnt need a gas tank.")
+
+
+details= electronic_car('tesla','elect',2010)
+print(details.describe_car())
+details.fuel_tank()
+details.battery.describe_battery()
