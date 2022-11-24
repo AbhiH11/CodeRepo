@@ -1201,42 +1201,111 @@
 # people.increment_login_attempts()
 # people.Login_attempts()
 
-class Car:
-    def __init__(self,name,model,year):
-        self.name = name
-        self.model = model
-        self.year = year
-        self.mileage = 60
-        self.fuel = 50
+# class Car:
+#     def __init__(self,name,model,year):
+#         self.name = name
+#         self.model = model
+#         self.year = year
+#         self.mileage = 60
+#         self.fuel = 50
+#
+#     def describe_car(self):
+#         long_name = f'{self.year} {self.model} {self.name}'
+#         return long_name
+#
+#     def fuel_tank(self):
+#         print(f"This car has {self.fuel}-litre capacity")
+#
+# class Battery:
+#     def __init__(self,battery_size = 100):
+#         self.battery_size = battery_size
+#
+#     def describe_battery(self):
+#         print(f"This car has {self.battery_size}-KHW battery")
+#
+#     def get_range(self):
+#         # global range
+#         if self.battery_size == 80:
+#             range = 250
+#         elif self.battery_size == 100:
+#             range = 350
+#
+#         print(f"This car can go about {range} kms on full charge")
+#
+#
+#
+# class electronic_car(Car):
+#
+#     def __init__(self,name,model,year):
+#         super().__init__(name,model,year)
+#         self.battery = Battery()
+#
+#     # def battery_size(self):
+#     #     print(f"This car has {self.battery} khw battery")
+#
+#     def fuel_tank(self):
+#         print("This car doesnt need a gas tank.")
+#
+#
+# details= electronic_car('tesla','elect',2010)
+# print(details.describe_car())
+# details.fuel_tank()
+# details.battery.describe_battery()
+# details.battery.get_range()
 
-    def describe_car(self):
-        long_name = f'{self.year} {self.model} {self.name}'
-        return long_name
+#                       TRY IT YOURSELF
+# class restaurent:
+#     def __init__(self,name,cusine):
+#         self.name = name
+#         self.cusine =cusine
+#
+#     def describe_restaurent(self):
+#         print(f"\nName of the restaurent is {self.name}")
+#         print(f"Cusine type of the restaurent is {self.cusine}")
+#
+# class icecream_stand(restaurent):
+#
+#     def __init__(self,name,cusine):
+#         super().__init__(name,cusine)
+#     def display_flavors(self):
+#         flavor = ['vanila','strawberry','chocolate']
+#         print("\nThe flavors we have are: ")
+#         for flavors in flavor:
+#             print(f"{flavors}")
+#
+#
+# detail = icecream_stand('Abhi','Ind')
+# detail.describe_restaurent()
+# detail.display_flavors()
 
-    def fuel_tank(self):
-        print(f"This car has {self.fuel}-litre capacity")
 
-class Battery:
-    def __init__(self,battery_size = 80):
-        self.battery_size = battery_size
-
-    def describe_battery(self):
-        print(f"This car has {self.battery_size}-KHW battery")
-
-class electronic_car(Car):
-
-    def __init__(self,name,model,year):
-        super().__init__(name,model,year)
-        self.battery = Battery()
-
-    # def battery_size(self):
-    #     print(f"This car has {self.battery} khw battery")
-
-    def fuel_tank(self):
-        print("This car doesnt need a gas tank.")
-
-
-details= electronic_car('tesla','elect',2010)
-print(details.describe_car())
-details.fuel_tank()
-details.battery.describe_battery()
+# class user:
+# #
+#     def __init__(self,fname,lname,age,location):
+#         self.fname = fname
+#         self.lname = lname
+#         self.age = age
+#         self.location = location
+#
+#     def describe_user(self):
+#         print(f"\nHi my name is {self.fname} {self.lname}")
+#         print(f"I am {self.age} years old")
+#         print(f'I stay in {self.location}')
+#
+#     def greet_user(self):
+#         print(f"Hello {self.fname} {self.lname}. Welcome..!!")
+#
+# class admin(user):
+#
+#     def __init__(self,fname,lname,age,location):
+#         super().__init__(fname,lname,age,location)
+#
+#     def show_privilages(self):
+#         privilages = ['can add post','can delete post','can ban user']
+#         print("\nThe admin privilages are: ")
+#         for privilage in privilages:
+#             print(f"{privilage}".title())
+#
+# users = admin('Hari','Abhi',30,'Ind')
+# users.greet_user()
+# users.show_privilages()
