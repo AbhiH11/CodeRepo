@@ -1343,6 +1343,7 @@
 #     def upgrade_battery(self):
 #         if self.battery_size == self.battery_size:
 #             self.battery_size = 100
+"""This 'else' block is not required"""
 #         # else:
 #         #     self.battery_size = self.battery_size
 # class electronic_car(Car):
