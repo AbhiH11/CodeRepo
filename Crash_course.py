@@ -1299,13 +1299,68 @@
 #
 #     def __init__(self,fname,lname,age,location):
 #         super().__init__(fname,lname,age,location)
-#
-#     def show_privilages(self):
-#         privilages = ['can add post','can delete post','can ban user']
+#         self.privilege = Privilege()
+# class Privilege:
+#     def show_privileges(self):
+#         privileges = ['can add post','can delete post','can ban user']
 #         print("\nThe admin privilages are: ")
-#         for privilage in privilages:
-#             print(f"{privilage}".title())
+#         for privilege in privileges:
+#             print(f"{privilege}".title())
 #
-# users = admin('Hari','Abhi',30,'Ind')
+# users = admin('Hari','Abhi',29,'Ind')
 # users.greet_user()
-# users.show_privilages()
+# users.describe_user()
+# # users.show_privileges()
+# users.privilege.show_privileges()
+
+
+# class Car:
+#     def __init__(self,name,model,year):
+#         self.name = name
+#         self.model = model
+#         self.year = year
+#         self.mileage = 60
+#         self.fuel = 50
+#     def describe_car(self):
+#         long_name = f'{self.year} {self.model} {self.name}'
+#         return long_name
+#     def fuel_tank(self):
+#         print(f"This car has {self.fuel}-litre capacity")
+# class Battery:
+#     def __init__(self,battery_size = 80):
+#         self.battery_size = battery_size
+#     def describe_battery(self):
+#         print(f"This car has {self.battery_size}-KHW battery")
+#     def get_range(self):
+#         # global range
+#         if self.battery_size == 80:
+#             range = 250
+#         elif self.battery_size == 100:
+#             range = 350
+#
+#         print(f"This car can go about {range} kms on full charge")
+#
+#     def upgrade_battery(self):
+#         if self.battery_size == self.battery_size:
+#             self.battery_size = 100
+#         # else:
+#         #     self.battery_size = self.battery_size
+# class electronic_car(Car):
+#
+#     def __init__(self,name,model,year):
+#         super().__init__(name,model,year)
+#         self.battery = Battery()
+#
+#     # def battery_size(self):
+#     #     print(f"This car has {self.battery} khw battery")
+#     def fuel_tank(self):
+#         print("This car doesnt need a gas tank.")
+#
+#
+# details= electronic_car('tesla','elect',2010)
+# # print(details.describe_car())
+# # details.fuel_tank()
+# # details.battery.describe_battery()
+# details.battery.get_range()
+# details.battery.upgrade_battery()
+# details.battery.get_range()
