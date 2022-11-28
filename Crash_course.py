@@ -1364,3 +1364,4 @@
 # details.battery.get_range()
 # details.battery.upgrade_battery()
 # details.battery.get_range()
+
