@@ -1408,3 +1408,14 @@
 # print("Any ticket mathing this ticket number wins a lottery: ",matching_ticket)
 
 
+# with open('test_file.txt') as file:
+#     data = file.read()
+# print(data.rstrip())
+
+# file_path = 'C:/Users/abhih/.vscode/Test1.txt'
+
+# with open (file_path) as file:
+#     for line in file:
+#         print(line)
+# print(data.rstrip)
+
