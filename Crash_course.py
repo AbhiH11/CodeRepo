@@ -1043,17 +1043,17 @@
 # # your_dog.sit()
 # # your_dog.roll_over()
 #
-class restaurent:
-    def __init__(self,name,cusine):
-        self.name = name
-        self.cusine =cusine
+# class restaurent:
+#     def __init__(self,name,cusine):
+#         self.name = name
+#         self.cusine =cusine
 
-    def describe_restaurent(self):
-        print(f"\nName of the restaurent is {self.name}")
-        print(f"Cusine type of the restaurent is {self.cusine}")
+#     def describe_restaurent(self):
+#         print(f"\nName of the restaurent is {self.name}")
+#         print(f"Cusine type of the restaurent is {self.cusine}")
 
-    def open_restaurent(self):
-        print(f"{self.name} is now Open..!")
+#     def open_restaurent(self):
+#         print(f"{self.name} is now Open..!")
 # #
 # # Restaurent = restaurent('My_restaurent','Indian')
 # # print(f"{Restaurent.name} is a good choice..! Because it has {Restaurent.cusine} cusine. ")
@@ -1295,18 +1295,18 @@ class restaurent:
 # #     def greet_user(self):
 # #         print(f"Hello {self.fname} {self.lname}. Welcome..!!")
 # #
-from User_module import user
-class admin(user):
+# from User_module import user
+# class admin(user):
 
-    def __init__(self,fname,lname,age,location):
-        super().__init__(fname,lname,age,location)
-        self.privilege = Privilege()
-class Privilege:
-    def show_privileges(self):
-        privileges = ['can add post','can delete post','can ban user']
-        print("\nThe admin privilages are: ")
-        for privilege in privileges:
-            print(f"{privilege}".title())
+#     def __init__(self,fname,lname,age,location):
+#         super().__init__(fname,lname,age,location)
+#         self.privilege = Privilege()
+# class Privilege:
+#     def show_privileges(self):
+#         privileges = ['can add post','can delete post','can ban user']
+#         print("\nThe admin privilages are: ")
+#         for privilege in privileges:
+#             print(f"{privilege}".title())
 # #
 # # users = admin('Hari','Abhi',29,'Ind')
 # # users.greet_user()
@@ -1315,49 +1315,49 @@ class Privilege:
 # # users.privilege.show_privileges()
 #
 #
-class Car:
-    def __init__(self,name,model,year):
-        self.name = name
-        self.model = model
-        self.year = year
-        self.mileage = 60
-        self.fuel = 50
-        self.battery = Battery()
+# class Car:
+#     def __init__(self,name,model,year):
+#         self.name = name
+#         self.model = model
+#         self.year = year
+#         self.mileage = 60
+#         self.fuel = 50
+#         self.battery = Battery()
 
-    def describe_car(self):
-        long_name = f'{self.year} {self.model} {self.name}'
-        return long_name
-    def fuel_tank(self):
-        print(f"This car has {self.fuel}-litre capacity")
-class Battery:
-    def __init__(self,battery_size = 80):
-        self.battery_size = battery_size
-    def describe_battery(self):
-        print(f"This car has {self.battery_size}-KHW battery")
-    def get_range(self):
-        # global range
-        if self.battery_size == 80:
-            range = 250
-        elif self.battery_size == 100:
-            range = 350
+#     def describe_car(self):
+#         long_name = f'{self.year} {self.model} {self.name}'
+#         return long_name
+#     def fuel_tank(self):
+#         print(f"This car has {self.fuel}-litre capacity")
+# class Battery:
+#     def __init__(self,battery_size = 80):
+#         self.battery_size = battery_size
+#     def describe_battery(self):
+#         print(f"This car has {self.battery_size}-KHW battery")
+#     def get_range(self):
+#         # global range
+#         if self.battery_size == 80:
+#             range = 250
+#         elif self.battery_size == 100:
+#             range = 350
 
-        print(f"This car can go about {range} kms on full charge")
+#         print(f"This car can go about {range} kms on full charge")
 
-    def upgrade_battery(self):
-        if self.battery_size == self.battery_size:
-            self.battery_size = 100
-        # else:
-        #     self.battery_size = self.battery_size
-class electronic_car(Car):
+#     def upgrade_battery(self):
+#         if self.battery_size == self.battery_size:
+#             self.battery_size = 100
+#         # else:
+#         #     self.battery_size = self.battery_size
+# class electronic_car(Car):
 
-    def __init__(self,name,model,year):
-        super().__init__(name,model,year)
-        self.battery = Battery()
+#     def __init__(self,name,model,year):
+#         super().__init__(name,model,year)
+#         self.battery = Battery()
 
-    # def battery_size(self):
-    #     print(f"This car has {self.battery} khw battery")
-    def fuel_tank(self):
-        print("This car doesnt need a gas tank.")
+#     # def battery_size(self):
+#     #     print(f"This car has {self.battery} khw battery")
+#     def fuel_tank(self):
+#         print("This car doesnt need a gas tank.")
 
 
 # details= electronic_car('tesla','elect',2010)
@@ -1368,22 +1368,21 @@ class electronic_car(Car):
 # details.battery.upgrade_battery()
 # details.battery.get_range()
 
-
+# roll a dice 10 times
 from random import randint
-# class die:
-#     def __init__(self,min,max):
-#         self.min = min
-#         self.max = max
-#
-#     def roll_die(self):
-#         while True:
-#             print("Rolling a dice...")
-#             number = randint(self.min,self.max)
-#             print(f"your number: {number}")
-#             choice = input("Do you want to roll a dice?(y/n)")
-#             if choice == 'n':
-#                 break
-#
-# det = die(1,6)
-# det.roll_die()
+class die:
+    def __init__(self,sides):
+        self.sides = sides
 
+    def roll_die(self,times):
+        times=1
+        while True:
+            if times:
+                number = randint(1,self.sides)
+                times+=1
+                print(f"Number is : {number}",times)
+                if times == 10:
+                    break
+
+det = die(30)
+det.roll_die(10)
