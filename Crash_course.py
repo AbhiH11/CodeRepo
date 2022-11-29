@@ -1377,12 +1377,12 @@ class die:
     def roll_die(self,times):
         times=1
         while True:
-            if times:
-                number = randint(1,self.sides)
-                times+=1
-                print(f"Number is : {number}",times)
-                if times == 10:
-                    break
+            # if times:
+            number = randint(1,self.sides)
+            times+=1
+            print(f"Number is : {number}",times)
+            if times == 10:
+                break
 
 det = die(30)
 det.roll_die(10)
