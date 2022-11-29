@@ -1369,28 +1369,36 @@
 # details.battery.get_range()
 
 # roll a dice 10 times
-from random import randint
-class die:
-    # dice_list = []
-    def __init__(self,sides):
-        self.sides = sides
+# from random import randint
+# class die:
+#     # dice_list = []
+#     def __init__(self,sides):
+#         self.sides = sides
 
-    def roll_die(self,times):
-        dice_list = []
-        times=0
-        while True:
-            # if times:
-            number = randint(1,self.sides)
-            times+=1
-            print(f"Number is : {number}",times)
-            dice_list.append(number)
-            if times == 10:
-                print(dice_list)
-                break
+#     def roll_die(self,times):
+#         dice_list = []
+#         times=0
+#         while True:
+#             # if times:
+#             number = randint(1,self.sides)
+#             times+=1
+#             print(f"Number is : {number}",times)
+#             dice_list.append(number)
+#             if times == 10:
+#                 print(dice_list)
+#                 break
 
-det = die(30)
-det.roll_die(10)
-# from random import choice
-# list = [1,2,3,4,5,6,7,8,9,10,'q','w','e','r']
-# matching_ticket = []
-# while len(matching_ticket)<4:
+# det = die(30)
+# det.roll_die(10)
+
+
+from random import choice
+list = [1,2,3,4,5,6,7,8,9,10,'q','w','e','r']
+matching_ticket = []
+while len(matching_ticket)<4:
+    pulled_item = choice(list)
+
+    if pulled_item not in matching_ticket:
+        print(f"we pulled a: {pulled_item}")
+        matching_ticket.append(pulled_item)
+print("Any ticket mathing this ticket number wins a lottery: ",matching_ticket)
