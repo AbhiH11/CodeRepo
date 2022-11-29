@@ -1391,14 +1391,20 @@
 # det = die(30)
 # det.roll_die(10)
 
+"""This code is not finished yet. I will work on it later"""
+# from random import choice
+# list = [1,2,3,4,5,6,7,8,9,10,'q','w','e','r']
+# matching_ticket = []
+# my_ticket = ['q','r',1,'w']
+# while len(matching_ticket)<4:
+#     pulled_item = choice(list)
 
-from random import choice
-list = [1,2,3,4,5,6,7,8,9,10,'q','w','e','r']
-matching_ticket = []
-while len(matching_ticket)<4:
-    pulled_item = choice(list)
+#     if pulled_item not in matching_ticket:
+#         print(f"we pulled a: {pulled_item}")
+#         matching_ticket.append(pulled_item)
+    
+#     if matching_ticket == my_ticket:
+#         print("The number of loops it took to win a lottery: ")
+# print("Any ticket mathing this ticket number wins a lottery: ",matching_ticket)
 
-    if pulled_item not in matching_ticket:
-        print(f"we pulled a: {pulled_item}")
-        matching_ticket.append(pulled_item)
-print("Any ticket mathing this ticket number wins a lottery: ",matching_ticket)
+
