@@ -43,3 +43,27 @@
 # from Crash_course import *
 # fun = car_details(800,'mini',maker = 'maruti')
 # print(fun)
+
+# from Crash_course import Car as c,electronic_car
+#
+# # details = c("Tesla",'EV',2020)
+# detail = electronic_car("Tesla",'EV',2020)
+# # print(details.describe_car())
+# detail.battery.describe_battery()
+
+# from Crash_course import restaurent as r
+#
+# det = r("Abhi","Indian")
+# det.describe_restaurent()
+# det.open_restaurent()
+
+from User_module import user
+# from Crash_course import admin,Privilege
+
+# details = admin("Hari","Abhi",30,"Ind")
+# details.privilege.show_privileges()
+#
+# det = admin("Hari","Abhi",30,"Ind")
+# det.describe_user()
+# det.greet_user()
+# det.privilege.show_privileges()
