@@ -1415,7 +1415,52 @@
 # file_path = 'C:/Users/abhih/.vscode/Test1.txt'
 
 # with open (file_path) as file:
-#     for line in file:
-#         print(line)
-# print(data.rstrip)
+#     line = file.readlines()
+# #     for line in file:
+# #         print(line)
+# # print(data.rstrip)
+# for lines in line:
+#     print(lines.rstrip())
 
+# file_name = 'test_file.txt'
+
+# with open (file_name) as file:
+#     lines = file.readlines()
+
+# test_file = ''
+# for line in lines:
+#     # test_file+=line.rstrip()
+#     test_file+=line.strip()
+
+# print(test_file)
+# print(len(test_file))
+
+# file_path = 'C:/Users/abhih/.vscode/pi_million_digits.txt'
+
+# with open(file_path) as file:
+#     lines = file.readlines()
+
+# test_file = ''
+# for line in lines:
+#     test_file+=line.strip()
+# birthday = input("Enter your bday in the format ddmmyyyy: \n")
+# if birthday in test_file:
+#     print("Your bday is in the first million digits of pi")
+# else:
+#     print("ypur bday doesnt appear in the first million digits of pi")
+# print(f"{test_file[:52]}....")
+# print(len(test_file))
+
+# with open('Testing_try_yourself.txt') as file:
+#     # data = file.read()
+#     # print(data*3)
+#     # print(len(data))
+#     lines = file.readlines()
+# # for line in lines:
+# #     print(line)
+
+# test_file = ''
+# for line in lines:
+#     test_file+=line.strip()
+
+# print(test_file)
