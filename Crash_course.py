@@ -1452,34 +1452,15 @@
 # print(len(test_file))
 
 # with open('Testing_try_yourself.txt') as file:
-    # data = file.read()
-    # print(data*3)
-    # print(len(data))
+#     # data = file.read()
+#     # print(data*3)
+#     # print(len(data))
 #     lines = file.readlines()
-# for line in lines:
-#     print(line)
+# # for line in lines:
+# #     print(line)
 
 # test_file = ''
 # for line in lines:
 #     test_file+=line.strip()
 
 # print(test_file)
-
-"""For some reason 'replace() method is not working. i will revisit on this later"""
-
-# with open('Testing_Try_Yourself.txt') as file:
-#     # print(file)
-#     # file.replace('python','c')
-#     lines = file.read()
-#     # print(lines)
-#     lines.replace('python','c')   
-#     # lines['python'] = 'c'
-#     print(lines)
-
-
-# test = ''
-# for line in lines:
-#     line.replace('python','c')
-#     test+=line
-
-# print(line)
