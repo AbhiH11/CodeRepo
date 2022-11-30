@@ -1464,3 +1464,41 @@
 #     test_file+=line.strip()
 
 # print(test_file)
+
+# filename = 'Testing_try_yourself.txt'
+
+# # with open(filename,'w') as file:
+# #     file.write('Hi i am AH\n')
+# #     file.write('I am learning python\n')
+# with open(filename,'a') as file:
+#     file.write('Python is easy to learn\n')
+#     file.write('python is dynamically written')
+
+# 1.prompts user for a name
+# 2.when they respond write their name to a file
+
+# filename = 'guest.txt'
+
+# with open(filename,'a') as file:
+#     prompt = input('Please enter your name: \n')
+    # file.write(f"Hi {prompt}")
+
+# filename = 'guestbook.txt'
+# with open(filename,'a') as file:
+#     while True:
+#         prompt = input("Please enter your name \n")
+#         file.write(f"Hi {prompt}\n")
+#         choice = input("y/n:\n")
+#         if choice == 'n':
+#             break
+
+# filename = 'response1.txt'
+
+# with open(filename,'a') as file:
+#     while True:
+#         prompt = input("Why do u like Pyhton:\n")
+#         file.write(f'{prompt}\n')
+#         choice = input('y/n:\n')
+#         if choice == 'n':
+#             break
+
