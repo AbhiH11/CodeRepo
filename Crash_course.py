@@ -1420,7 +1420,8 @@
 # #         print(line)
 # # print(data.rstrip)
 # for lines in line:
-#     print(lines.rstrip())
+#     # print(lines.rstrip())
+#     print(lines)
 
 # file_name = 'test_file.txt'
 
@@ -1502,3 +1503,62 @@
 #         if choice == 'n':
 #             break
 
+# line = 'python '
+# print(len(line))
+# print(len(line.rstrip()))
+# print(line)
+# print(len(line))
+
+"""Try and Except blocks"""
+
+# try:
+#     print(5/0)
+# except:
+#     print("You cannot divide by zero\n")
+
+# print("Give any two numbers and i will divide it for you..!")
+# print("enter 'q' to exit")
+
+# while True:
+#     first_num = input("Enter first number: \n")
+#     if first_num == 'q':
+#         break
+
+#     second_num = input("Enter second number: \n")
+#     if second_num == 'q':
+#         break
+
+#     try:
+#         ans = int(first_num)/ int(second_num)
+#     except ZeroDivisionError:
+#         print("You cannot divide by zero")
+#     else:
+#         print(ans)
+
+# filename = 'alice.txxt'
+# try:
+#     with open(filename, encoding='utf-8') as file:
+#         contents = file.read()
+# except FileNotFoundError:
+#     print("File not found")
+# else:
+#     # count the number of words in a file
+#     words = contents.split()
+#     num_words = len(words)
+#     print(f" The file has {num_words} number of words")
+
+# def count_words(filename):
+#     try:
+#         with open(filename, encoding='utf-8') as file:
+#             contents = file.read()
+#     except FileNotFoundError:
+#         print(f" sorry {filename} doesnt exists")
+#     else:
+#         # count the number of words in a file
+#         words = contents.split()
+#         num_words = len(words)
+#         print(f" The file has {num_words} number of words")
+
+# filename = ['alice.txxt','reunion.txt']
+# for file in filename:
+#     count_words(file)
