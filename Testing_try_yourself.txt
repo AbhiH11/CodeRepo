@@ -1,0 +1,4 @@
+Hi i am AH
+I am learning python
+Python is easy to learn
+python is dynamically written
