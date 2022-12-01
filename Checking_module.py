@@ -57,7 +57,7 @@
 # det.describe_restaurent()
 # det.open_restaurent()
 
-from User_module import user
+# from User_module import user
 # from Crash_course import admin,Privilege
 
 # details = admin("Hari","Abhi",30,"Ind")
@@ -67,3 +67,18 @@ from User_module import user
 # det.describe_user()
 # det.greet_user()
 # det.privilege.show_privileges()
+
+# from Crash_course import get_formatted_name
+
+# # prompt = "Enter 'q' to quit"
+# while True:
+#     prompt = "Enter 'q' to quit"
+#     first = input("Enter your first name:\n")
+#     if first == 'q':
+#         break
+#     second = input("Enter last name:\n")
+#     if second == 'q':
+#         break
+
+#     formatted_name = get_formatted_name(first,second)
+#     print(f"Your full name is: {formatted_name}"
