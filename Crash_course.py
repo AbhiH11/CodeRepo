@@ -1624,8 +1624,171 @@
 #     else:
 #         print(data)
 
+
 # filename = ['dogs.txt','cats.txt']
 # for file in filename:
 #         # print(data)
 #     read_file(file)
 
+# filename = 'alice.txxt'
+# with open(filename) as f:
+#     content = f.read()
+#     print(content.lower().count('the '))
+#     print(content.count('the '))
+
+
+import json
+# numbers = [1,2,3,4,5,6,7,8,9]
+
+# filename = 'numbers.json'
+# with open(filename,'w') as f:
+#     json.dump(numbers,f)
+
+# filename = 'numbers.json'
+# with open(filename) as f:
+#     numbers = json.load(f)
+
+# print(numbers)
+
+# username = input("what is your name: \n")
+
+# filename = 'username.json'
+
+# with open(filename,'w') as f:
+#     json.dump(username,f)
+#     print(f"we will remember you when u come back again {username}")
+
+# filename = 'username.json'
+
+# with open(filename) as f:
+#     data = json.load(f)
+#     print(f"Welcome back {data} ")
+
+# filename = 'username1.json'
+
+# try:
+#     with open(filename) as f:
+#         data = json.load(f)
+# except FileNotFoundError:
+#     with open(filename,'w') as f:
+#         username = input("What is your name: \n")
+#         data = json.dump(username,f)
+#         print(f"We will remember you next time when you come back, {data}!")
+# else:
+#     print(f"Welcome back {data}")
+
+"""REFACTORING"""
+
+# def greet_user():
+#     """greet user by name"""
+#     filename = "username.json"
+    
+#     try:
+#         with open(filename) as f:
+#             data = json.load(f)
+#             print(f"Welcomeback, {data}!")
+    
+#     except FileNotFoundError:
+#         with open(filename,'w') as f:
+#             username = input("What is your name?\n")
+#             json.dump(username,f)
+#             print(f"We will remember you next-time when you come back,{username}!")
+
+# greet_user()
+
+# """Refactoring it in to two functions"""
+# def get_stored_username():
+#     filename = 'username2.json'
+#     try:
+#         with open(filename) as f:
+#             data = json.load(f)
+#             print(f"Welcome back,{data}!")
+#     except FileNotFoundError:
+#         return None
+#     else:
+#         return data
+
+# def get_new_username():
+#     # with open(filename,'w') as f:
+#     username = input("What is your name?\n")
+#     filename = 'username2.json'
+#     with open(filename,'w') as f:
+#         json.dump(username,f)
+#     return username
+
+# def greet_user():
+#     username = get_stored_username()
+#     if username:
+#         print(f"Welcome back,{username}!")
+#     else:
+#         username = get_new_username()
+#         # with open(filename,'w') as f:
+#         #     username = input("What is your name?\n")
+#         #     json.dump(username,f)
+#         print(f"We will remember you next time,{username}!")
+# greet_user()
+"""Try it yourself"""
+# filename = 'numbers.json'
+
+# with open(filename,'w') as f:
+#     number = int(input("Enter your fav number: \n"))
+#     data = json.dump(number,f)
+
+# with open(filename) as f:
+#     data = json.load(f)
+#     print(f"I know your fav number. its {data}!")
+
+# def get_fav_number():
+#     filename = 'numbers2.json'
+#     try:
+#         with open(filename) as f:
+#             number = json.load(f)
+#             print(f"Your fav number is, {number}!")
+#     except FileNotFoundError:
+#         with open(filename,'w') as f:
+#             number = int(input("Enter your fav number: \n"))
+#             json.dump(number,f)
+
+# get_fav_number()
+        
+
+# def get_stored_username():
+#     filename = 'username.json'
+#     try:
+#         with open(filename) as f:
+#             username = json.load(f)
+#             print(f"Welcome back,{username}")
+
+#     except FileNotFoundError:
+#         return None
+#     else:
+#         return username
+
+# def get_username():
+#     filename = 'username.json'
+#     username = input("What is your username?\n")
+#     with open(filename,'w') as file:
+#         json.dump(username,file)
+#         return username
+
+
+# def greet_user():
+#     username = get_stored_username()
+#     choice = input("Is this the correct username?(y/n)")
+#     if choice == 'n':
+#         username = get_username()
+#         print(f"We will remember you next time,{username}")
+#     else:
+#         print(f"Welcome back, {username}")
+
+# greet_user()
+
+def get_formatted_name(first,last,middle= ''):
+    if middle:
+        full_name = f"{first} {middle} {last}"
+    else:
+        full_name = f"{first} {last}"
+    return full_name.title()
+
+name = get_formatted_name('hari','abhi')
+print(name)
