@@ -1562,3 +1562,70 @@
 # filename = ['alice.txxt','reunion.txt']
 # for file in filename:
 #     count_words(file)
+
+"""Trying to fail the program silently"""
+
+# def count_words(filename):
+#     try:
+#         with open(filename, encoding='utf-8') as file:
+#             contents = file.read()
+#     except FileNotFoundError:
+#         # print(f" sorry {filename} doesnt exists")
+#         pass
+#     else:
+#         # count the number of words in a file
+#         words = contents.split()
+#         num_words = len(words)
+#         print(f" The file has {num_words} number of words")
+
+# filename = ['alice.txxt','reunion.txt']
+# for file in filename:
+#     count_words(file)
+
+# prompt = "Give two numbers and i will do the rest"
+# prompt+="Enter'q' to quit"
+
+# while True:
+#     try:
+#         first_num = input("Enter first number: \n")
+
+#         if first_num == 'q':
+#             break
+#         second_num = input("Enter second number: \n")
+#         if second_num == 'q':
+#             break
+#         ans = int(first_num) + int(second_num)
+#     except ValueError:
+#         print(" Sorry only integers are allowed.")
+#     else:
+#         print(ans)
+
+# num = 42
+# print("My fav number is:")
+# print(f"My fav number is:{num}")
+# print("My fav num is:{}".format(num))
+
+"""Demonstration of strip"""
+# filename = 'sample.txt'
+# with open(filename) as file:
+#     data = file.read().strip()
+#     print(data)
+
+# def read_file(filename):
+#     try:
+#         with open(filename) as f:
+#             data = f.read()
+#     # except FileNotFoundError:
+#     #     print(f"The file {filename} doesnt exists\n")
+    
+#     # for the code to fail silently
+#     except:
+#         pass
+#     else:
+#         print(data)
+
+# filename = ['dogs.txt','cats.txt']
+# for file in filename:
+#         # print(data)
+#     read_file(file)
+
