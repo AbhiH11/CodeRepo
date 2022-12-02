@@ -1783,12 +1783,46 @@ import json
 
 # greet_user()
 
-def get_formatted_name(first,last,middle= ''):
-    if middle:
-        full_name = f"{first} {middle} {last}"
-    else:
-        full_name = f"{first} {last}"
-    return full_name.title()
+# def get_formatted_name(first,last,middle= ''):
+#     if middle:
+#         full_name = f"{first} {middle} {last}"
+#     else:
+#         full_name = f"{first} {last}"
+#     return full_name.title()
 
-name = get_formatted_name('hari','abhi')
-print(name)
+# name = get_formatted_name('hari','abhi')
+# print(name)
+
+
+# def details(city,country,population = ''):
+#     if population:
+#         formatted_detail = f"{city} {country} {population}"
+#     else:
+#         formatted_detail = f"{city} {country}"
+#     return formatted_detail.title()
+
+# name = details('hyderabad','india')
+# print(name)
+
+# 1.store a question and responses
+# 2.show the question
+# 3.store a single response tothe survey
+# 4.show results
+
+class survey:
+
+    def __init__(self,question):
+        self.question = question
+        self.response = []
+
+    def show_question(self):
+        print(self.question)
+
+    def store_response(self,new_response):
+        self.response.append(new_response)
+
+    def show_results(self):
+        print("showing results: ")
+        for response in self.response:
+            print(f"--{response}")
+            
