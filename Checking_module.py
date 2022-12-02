@@ -82,3 +82,20 @@
 
 #     formatted_name = get_formatted_name(first,second)
 #     print(f"Your full name is: {formatted_name}"
+
+from Crash_course import survey
+
+question = "What are the names of your fav car brands?"
+my_survey = survey(question)
+
+my_survey.show_question()
+
+while True:
+    prompt = "Enter 'q' anytime to quit\n"
+    response = input("Brands: ")
+    if response == 'q':
+        break
+    my_survey.store_response(response)
+
+print("Thank you for your time")
+my_survey.show_results()
