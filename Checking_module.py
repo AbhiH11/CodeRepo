@@ -83,7 +83,7 @@
 #     formatted_name = get_formatted_name(first,second)
 #     print(f"Your full name is: {formatted_name}"
 
-from Crash_course import survey
+from Crash_course import survey,employee
 
 question = "What are the names of your fav car brands?"
 my_survey = survey(question)
@@ -99,3 +99,4 @@ while True:
 
 print("Thank you for your time")
 my_survey.show_results()
+
