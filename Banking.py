@@ -14,7 +14,10 @@ class user:
         self.gender = gender
 
     def show_details(self):
-        print("Personal details: ")
+        Title = "-- Personal details --"
+        print("*" * len(Title))
+        print(Title)
+        print("*" * len(Title))
         print("Name:", self.name)
         print('Age:', self.age)
         print('Gender:', self.gender)
@@ -60,11 +63,11 @@ if __name__ == '__main__':
 
         if choice == 1:
             c.show_details()
-        if choice == 2:
+        elif choice == 2:
             c.deposit_amount()
-        if choice == 3:
+        elif choice == 3:
             c.withdraw_amount()
-        if choice == 4:
+        elif choice == 4:
             c.view_balance()
-        if choice == 5:
+        else:
             break
