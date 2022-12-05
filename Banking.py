@@ -4,7 +4,7 @@
 # 4.withdraw amount
 # 5. show balance
 # 6.choice(menu)
-# 'q' to quit
+# 7.Quit
 
 class user:
 
@@ -48,6 +48,12 @@ class bank(user):
 # c.withdraw_amount(200)
 if __name__ == '__main__':
     c = bank("Abhi",30,'Male')
+
+# """MENU = (1.Show details;
+# 2.Deposit amount;
+# 3.Withdraw amount;
+# 4. View balance
+# 5.Quit)"""
 
     while True:
         choice = int(input("Enter your option: "))
