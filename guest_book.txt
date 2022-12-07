@@ -1,4 +1,0 @@
-Hi {prompt}
-Hi {prompt}
-Hi AbhiHi AnuHi Abhi
-Hi Anu
