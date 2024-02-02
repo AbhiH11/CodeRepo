@@ -6,5 +6,4 @@ person1 = {
      "age": 29,
      "Gender": "M",
      "country":"India"
-
  }
